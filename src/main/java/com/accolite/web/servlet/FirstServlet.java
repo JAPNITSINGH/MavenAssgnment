@@ -15,8 +15,8 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 public class FirstServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException{
-		//ObjectMapper mapper=new ObjectMapper();
-		XmlMapper mapper = new XmlMapper();
+		ObjectMapper mapper=new ObjectMapper();
+		//XmlMapper mapper = new XmlMapper();
 		Users myUser =new Users();
 		myUser.setAge(20);
 		myUser.setId(1);
